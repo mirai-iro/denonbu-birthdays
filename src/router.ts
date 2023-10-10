@@ -5,8 +5,10 @@ import CalendarPage from './pages/Calendar.vue'
 import ListPage from './pages/List.vue'
 import BookmarkPage from './pages/Bookmark.vue'
 
+const BASE_URL = '/denonbu-birthdays/'
+
 export default createRouter({
-	history: createWebHistory(),
+	history: createWebHistory(BASE_URL),
 	routes: [
 		{
 			name: 'calendar',
