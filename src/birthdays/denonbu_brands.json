@@ -1,0 +1,12 @@
+[
+  {"id":1, "name":"アキバエリア", "short_name":"アキバ", "symbol":"akiba", "started_on": "2020-06-28", "ended_on":null, "school":"外神田文芸高校", "disp_order":1},
+  {"id":2, "name":"ハラジュクエリア", "short_name":"ハラジュク", "symbol":"harajuku", "started_on": "2020-06-28", "ended_on":null, "school":"神宮前参道學園", "disp_order":2},
+  {"id":3, "name":"アザブエリア", "short_name":"アザブ", "symbol":"azabu", "started_on": "2020-06-28", "ended_on":null, "school":"港白金女学院", "disp_order":3},
+  {"id":4, "name":"シブヤエリア", "short_name":"シブヤ", "symbol":"shibuya", "started_on": "2020-06-28", "ended_on":null, "school":"帝音国際学院", "disp_order":4},
+  {"id":5, "name":"カブキエリア", "short_name":"カブキ", "symbol":"kabuki", "started_on": "2022-03-19", "ended_on":null, "school":"真新宿GR学園", "disp_order":5},
+  {"id":6, "name":"シンオオクボエリア", "short_name":"シンオオクボ", "symbol":"shinokubo", "started_on": "2023-04-07", "ended_on":null, "school":"深大久保DJ＆ダンスアカデミー", "disp_order":6},
+  {"id":7, "name":"シンサイバシエリア", "short_name":"シンサイバシ", "symbol":"shinsaibashi", "started_on": "2023-07-28", "ended_on":null, "school":"心斎橋演芸高校", "disp_order":7},
+  {"id":8, "name":"イケブクロエリア", "short_name":"イケブクロ", "symbol":"ikebukuro", "started_on": "2023-09-16", "ended_on":null, "school":"池袋空乗院高校", "disp_order":8},
+  {"id":9, "name":"ネオトウキョウエリア", "short_name":"ネオトウキョウ", "symbol":"neotokyo", "started_on": "2023-10-08", "ended_on":null, "school":"東京電脳学園", "disp_order":9},
+  {"id":999, "name":"ヴイアライヴ", "short_name":"ヴイアラ", "symbol":"valiv", "started_on": "2023-04-14", "ended_on":null, "school":"", "disp_order":999}
+]

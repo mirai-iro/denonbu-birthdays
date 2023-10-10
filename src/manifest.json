@@ -1,0 +1,22 @@
+{
+  "id": "/",
+	"name": "電音部 誕生日カレンダー",
+	"short_name": "電音部 誕生日",
+	"start_url": ".",
+	"display": "standalone",
+	"background_color": "#fff",
+	"lang": "ja",
+	"scope": "/",
+	"description": "電音部キャラクターの誕生日 (namco TOKYOの予定確認用)",
+	"icons": [{
+	  "src": "apple-touch-icon.png",
+	  "sizes": "600x600",
+	  "type": "image/png",
+    "purpose": "any"
+	},{
+	  "src": "apple-touch-icon.png",
+	  "sizes": "600x600",
+	  "type": "image/png",
+    "purpose": "maskable"
+	}]
+}

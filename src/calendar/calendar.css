@@ -1,0 +1,113 @@
+
+:root, [data-bs-theme="light"] {
+	--calendar-color-subject-text: var(--bs-body-color);
+	--calendar-color-wday6-text: #0000dd;
+	--calendar-color-wday6-bg: #efefff;
+	--calendar-color-wday0-text: #dd0000;
+	--calendar-color-wday0-bg: #ffefef;
+	--calendar-color-holiday-text: #dd0000;
+	--calendar-color-holiday-bg: #ffefef;
+	--calendar-color-highlight-text: inherit;
+	--calendar-color-highlight-bg: var(--bs-warning-bg-subtle);
+}
+
+[data-bs-theme="dark"] {
+	--calendar-color-subject-text: var(--bs-body-color);
+	--calendar-color-wday6-text: var(--bs-info);
+	--calendar-color-wday6-bg: var(--bs-info-bg-subtle);
+	--calendar-color-wday0-text: var(--bs-danger);
+	--calendar-color-wday0-bg: var(--bs-danger-bg-subtle);
+	--calendar-color-holiday-text: var(--bs-danger);
+	--calendar-color-holiday-bg: var(--bs-danger-bg-subtle);
+	--calendar-color-highlight-text: inherit;
+	--calendar-color-highlight-bg: var(--bs-warning-bg-subtle);
+}
+
+.calendar-wday-6 {
+	color: var(--calendar-color-wday6-text) !important;
+}
+td.calendar-wday-6,
+th.calendar-wday-6,
+.card-header.calendar-wday-6,
+.popover-header.calendar-wday-6 {
+  background-color: var(--calendar-color-wday6-bg) !important;
+}
+
+.calendar-wday-0 {
+	color: var(--calendar-color-wday0-text) !important;
+}
+td.calendar-wday-0,
+th.calendar-wday-0,
+.card-header.calendar-wday-0,
+.popover-header.calendar-wday-0{
+  background-color: var(--calendar-color-wday0-bg) !important;
+}
+
+.calendar-holiday {
+	color: var(--calendar-color-holiday-text) !important;
+}
+td.calendar-holiday,
+th.calendar-holiday,
+.card-header.calendar-holiday,
+.popover-header.calendar-holiday {
+  background-color: var(--calendar-color-holiday-bg) !important;
+}
+
+td.calendar-cell {
+	height: 4rem;
+}
+
+.calendar-highlight td,
+.calendar-highlight th,
+th.calendar-highlight,
+td.calendar-highlight {
+  background-color: var(--calendar-color-highlight-bg) !important;
+}
+tr.calendar-highlight .calendar-date,
+th.calendar-highlight .calendar-date,
+td.calendar-highlight .calendar-date {
+	font-weight: bold;
+}
+
+td.calendar-wday-6.calendar-highlight,
+th.calendar-wday-6.calendar-highlight,
+td.calendar-wday-0.calendar-highlight,
+th.calendar-wday-0.calendar-highlight,
+td.calendar-holiday.calendar-highlight,
+th.calendar-holiday.calendar-highlight {
+  background-color: var(--calendar-color-highlight-bg) !important;
+}
+
+.calendar-event-line-mark, .calendar-personal-color-cube {
+	font-family: monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.calendar-event-line-subject {
+	margin-left: 0.25rem;
+	color: var(--calendar-color-subject-text);
+}
+.popover .calendar-holiday .calendar-event-line-subject {
+	color: var(--calendar-color-holiday-text) !important;
+}
+
+.calendar-cell .calendar-event-lines {
+	list-style: none;
+	margin: 0 0.2rem;
+	padding: 0;
+}
+
+@media (max-width: 767.98px) {
+	td.calendar-cell {
+		height: 3.5rem;
+	}
+	.calendar-cell .calendar-event-lines {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.calendar-cell .calendar-event-line {
+		line-height: 1rem;
+	}
+	.calendar-cell .calendar-event-line-subject {
+		display: none;
+	}
+}
