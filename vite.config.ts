@@ -43,6 +43,7 @@ function toKebabCase(camelCaseOrPascalCase: string): string {
 }
 
 export default defineConfig({
+	base: BASE_URL,
 	build: {
 		sourcemap: (process.env.SOURCE_MAP === 'true'),
 		rollupOptions: {
