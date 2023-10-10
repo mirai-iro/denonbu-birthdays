@@ -34,16 +34,17 @@ function handleClickConfig() {
 
 <template>
 	<header class="sticky-top bg-body">
-		<nav class="navbar bg-body-tertiary mb-0">
+		<nav class="navbar bg-body-tertiary mb-2">
 			<div class="container-fluid">
-				<div class="navbar-brand"><a href="/">電音部 誕生日カレンダー</a></div>
+				<div class="navbar-brand">
+					<h1 class="fs-5 m-0">電音部 誕生日カレンダー</h1>
+				</div>
 				<div class="ms-auto">
 					<button class="btn btn-sm btn-outline-secondary" @click="handleClickConfig">設定</button>
 				</div>
 			</div>
 		</nav>
 		<div class="container-fluid">
-			<h1 class="mt-2 mb-3 text-center">電音部 誕生日カレンダー</h1>
 			<ul class="nav nav-pills nav-justified">
 				<li class="nav-item text-nowrap mx-1"><RouterLink to="/" :class="`h-100 nav-link ${isActiveUpcoming}`">もうすぐ</RouterLink></li>
 				<li class="nav-item text-nowrap mx-1"><RouterLink to="/calendar" :class="`h-100 nav-link ${isActiveCalendar}`">カレンダー</RouterLink></li>
