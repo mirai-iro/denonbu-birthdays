@@ -3,7 +3,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import UpcomingPage from './pages/Upcoming.vue'
 import CalendarPage from './pages/Calendar.vue'
 import ListPage from './pages/List.vue'
-import BookmarkPage from './pages/Bookmark.vue'
 
 const BASE_URL = '/denonbu-birthdays/'
 
@@ -21,9 +20,6 @@ export default createRouter({
 			component: ListPage,
 		},
 		{
-			name: 'bookmark',
-			path: '/bookmark',
-			component: BookmarkPage,
 		},
 		{
 			name: 'upcoming',

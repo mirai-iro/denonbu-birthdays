@@ -10,17 +10,7 @@ import Header from './components/Header.vue'
 import ConfigModal from './components/ConfigModal.vue'
 import BirthdayDetailModal from './components/BirthdayDetailModal.vue'
 
-import type { AppConfig } from './app_config'
-import appConfigDefaultValue from './app_config'
-const appConfig: AppConfig = {
-	...appConfigDefaultValue,
-	startDate: new Date('2020-06-28'),
-	upcomingDays: 45,
-	brandsTitle: 'エリア',
-	enableBrandsBadge: true,
-	enableBookmark: false,
-	detailNotes: '※「パーソナルカラー」は、ASOBISTAGEの「アソビライト」に設定されている色です。',
-}
+import appConfig from './app_config'
 
 const currentDate = new Date()
 const currentYear = ref(currentDate.getFullYear())

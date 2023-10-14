@@ -4,17 +4,15 @@ export type AppConfig = {
 	upcomingDays: number
 	brandsTitle: string
 	enableBrandsBadge: boolean
-	enableBookmark: boolean
 	detailNotes: string
 }
 
-const defaultValue: AppConfig = {
-	startDate: new Date('2000-01-01'),
-	upcomingDays: 30,
-	brandsTitle: '登場作品',
-	enableBrandsBadge: false,
-	enableBookmark: false,
-	detailNotes: '',
+const appConfig: AppConfig = {
+	startDate: new Date('2020-06-28'),
+	upcomingDays: 0,
+	brandsTitle: 'エリア',
+	enableBrandsBadge: true,
+	detailNotes: '※「パーソナルカラー」は、ASOBISTAGEの「アソビライト」に設定されている色です。',
 }
 
-export default defaultValue
+export default appConfig
