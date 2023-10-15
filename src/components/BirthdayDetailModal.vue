@@ -49,7 +49,7 @@ const brandEntries: ComputedRef<BrandEntry[]> = computed(() => {
 				<div class="modal-body px-2 py-1">
 					<table class="table m-0" v-if="props.birthdayEntry">
 						<colgroup>
-							<col style="width:9rem; text-align: right;" />
+							<col style="width:6rem;" />
 							<col />
 						</colgroup>
 						<tbody>
@@ -62,7 +62,7 @@ const brandEntries: ComputedRef<BrandEntry[]> = computed(() => {
 								<td>{{ props.birthdayEntry.month }}月{{ props.birthdayEntry.day }}日</td>
 							</tr>
 							<tr v-if="props.birthdayEntry.color">
-								<th>パーソナルカラー</th>
+								<th class="text-nowrap">パーソナルカラー</th>
 								<td><ColorCube :color="props.birthdayEntry.color" class="calendar-personal-color-cube" /> {{ props.birthdayEntry.color }}</td>
 							</tr>
 							<tr>
@@ -80,7 +80,7 @@ const brandEntries: ComputedRef<BrandEntry[]> = computed(() => {
 							</tr>
 						</tbody>
 					</table>
-					<div v-if="props.appConfig.detailNotes" class="m-2 small text-muted">{{ props.appConfig.detailNotes }}</div>
+					<div v-if="props.appConfig.detailNotes" class="m-2 small text-secondary">{{ props.appConfig.detailNotes }}</div>
 				</div>
 			</div>
 		</div>
