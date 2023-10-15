@@ -11,12 +11,12 @@ import replace from '@rollup/plugin-replace'
 const webManifestJson = fs.readFileSync('./src/manifest.json')
 const webManifest = JSON.parse(webManifestJson.toString())
 
-const BASE_URL = '/denonbu-birthdays/'
+import BASE_PATH from './src/base_path'
 
 //----------------------------------------
 
 const pwaOptions: Partial<VitePWAOptions> = {
-	base: BASE_URL,
+	base: BASE_PATH,
 	manifest: webManifest,
 	injectRegister: 'inline',
 	includeAssets: [
@@ -32,8 +32,11 @@ const pwaOptions: Partial<VitePWAOptions> = {
 	},
 }
 
+// const currentDate = new Date()
 const replaceValues = {
-	__DATE__: Math.floor(Date.now() / 1000).toString(),
+	// __BUILD_TIMESTAMP__: Math.floor(currentDate.getTime() / 1000).toString(),
+	__BASE_PATH__: BASE_PATH,
+	__PUBLIC_URL_ROOT__: `https://mirai-iro.github.io${BASE_PATH}`.replace(/\/$/, ''),
 }
 
 function toKebabCase(camelCaseOrPascalCase: string): string {
@@ -43,7 +46,7 @@ function toKebabCase(camelCaseOrPascalCase: string): string {
 }
 
 export default defineConfig({
-	base: BASE_URL,
+	base: BASE_PATH,
 	build: {
 		sourcemap: (process.env.SOURCE_MAP === 'true'),
 		rollupOptions: {

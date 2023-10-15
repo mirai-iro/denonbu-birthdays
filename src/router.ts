@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+import BASE_PATH from './base_path'
+
 // import UpcomingPage from './pages/Upcoming.vue'
 import CalendarPage from './pages/Calendar.vue'
 import ListPage from './pages/List.vue'
 
-const BASE_URL = '/denonbu-birthdays/'
-
 export default createRouter({
-	history: createWebHistory(BASE_URL),
+	history: createWebHistory(BASE_PATH),
 	routes: [
 		{
 			name: 'list',
