@@ -98,7 +98,7 @@ function handleClickBirthday(birthdaysMasterId: number) {
 </script>
 
 <template>
-	<h2 class="visually-hidden">List &amp; Search</h2>
+	<h2 class="visually-hidden">リスト</h2>
 	<table class="table table-sm table-hover my-2">
 		<colgroup>
 			<col style="width:3.5rem;">

@@ -83,7 +83,7 @@ function handleClickBirthday(birthdaysMasterId: number) {
 </script>
 
 <template>
-	<h2 class="visually-hidden">Upcoming</h2>
+	<h2 class="visually-hidden">直近の予定</h2>
 	<div class="my-2">今日は{{ currentMonth }}月{{ currentDay }}日です</div>
 	<table class="table table-sm table-hover my-2">
 		<colgroup>
